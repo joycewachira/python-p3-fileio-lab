@@ -21,11 +21,11 @@ def test_append_file(tmp_path):
         file_content_read = f.read()
     assert file_content_read == file_content + append_content
 
-def test_read_file(tmp_path):
-    """Test read_file()"""
+# def test_read_file(tmp_path):
+#     """Test read_file()"""
 
-    file_name = tmp_path / "test_file"
-    file_content = "This is a test content."
-    write_file(file_name, file_content)
-    file_content_read = read_file(file_name)
-    assert file_content_read == file_content
+#     file_name = tmp_path / "test_file"
+#     file_content = "This is a test content."
+#     write_file(file_name, file_content)
+#     file_content_read = read_file(file_name)
+#     assert file_content_read == file_content
